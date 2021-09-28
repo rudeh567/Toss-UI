@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
    
-    let nameList = ["나만의 하나은행", "나만의 농협은행", "나만의 신한은행"]
+    let nameList = ["hana", "bank", "newone"]
     let moneyList = [1000000,2000000,3000000]
     
     @IBOutlet weak var cornerView: UIView!
@@ -24,13 +24,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return moneyList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        
-        return cell
+
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? ListCell {
+            let img = UIImage(named: "\(nameList[indexPath.row]).png")
+            cell.imgView.image = img
+            cell.nameLabel.text = nameList[indexPath.row]
+            cell.moneyLabel.text = "\(moneyList[indexPath.row])"
+            
+            return cell
+        } else {
+            return UITableViewCell()
+        }
     }
     
 }
