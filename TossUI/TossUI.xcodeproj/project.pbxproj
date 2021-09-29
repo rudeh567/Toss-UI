@@ -13,6 +13,7 @@
 		F074FB1F2702CE0400191759 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F074FB1D2702CE0400191759 /* Main.storyboard */; };
 		F074FB212702CE0500191759 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F074FB202702CE0500191759 /* Assets.xcassets */; };
 		F074FB242702CE0500191759 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F074FB222702CE0500191759 /* LaunchScreen.storyboard */; };
+		F0E3A92B27043C7000C67D44 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E3A92A27043C7000C67D44 /* ModalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F074FB202702CE0500191759 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F074FB232702CE0500191759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F074FB252702CE0500191759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0E3A92A27043C7000C67D44 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				F074FB202702CE0500191759 /* Assets.xcassets */,
 				F074FB222702CE0500191759 /* LaunchScreen.storyboard */,
 				F074FB252702CE0500191759 /* Info.plist */,
+				F0E3A92A27043C7000C67D44 /* ModalViewController.swift */,
 			);
 			path = TossUI;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0E3A92B27043C7000C67D44 /* ModalViewController.swift in Sources */,
 				F074FB1C2702CE0400191759 /* ViewController.swift in Sources */,
 				F074FB182702CE0400191759 /* AppDelegate.swift in Sources */,
 				F074FB1A2702CE0400191759 /* SceneDelegate.swift in Sources */,
@@ -305,7 +309,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -332,7 +336,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
