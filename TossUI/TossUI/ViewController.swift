@@ -9,8 +9,8 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
    
-    let nameList = ["hana", "bank", "newone"]
-    let moneyList = [1000000,2000000,3000000]
+    let nameList = ["hana", "bank", "newone", "KB"]
+    let moneyList = ["1000000원","2000000원","3000000원", "312000원"]
     
     @IBOutlet weak var cornerView: UIView!
     @IBOutlet weak var cornerView2: UIView!
